@@ -5,6 +5,6 @@ var server = http.createServer((req, res) => {
 	return res.end('hello');
 });
 
-server.listen(8080, () => {
+server.listen(process.env.PORT || 5000, () => {
 	console.log('started');
 })
